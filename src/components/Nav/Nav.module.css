@@ -1,0 +1,38 @@
+.nav{
+    display: grid;
+    grid-template-columns: 92px 101px 105px 138px 111px;
+    justify-content: space-between;
+}
+.nav a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    list-style-type: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #14233D;
+    padding: 8px;
+}
+.nav a:hover{
+    transition: 0.5s;
+    color: #297FFF;
+}
+@media(max-width: 1152px){
+    header{
+        column-gap: 15px;
+    }
+}
+@media(max-width: 1024px){
+    .nav{
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        background-color: #000;
+        opacity: 0.5;
+        z-index: 99;
+        /* justify-content: space-between;  */
+    }
+}

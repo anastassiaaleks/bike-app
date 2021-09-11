@@ -1,0 +1,66 @@
+header{
+    max-width: 1240px;
+    height: 80px;
+    margin: 0 auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 95px 566px 70px 215px 1fr;
+    column-gap: 40px;
+    justify-items: center;
+}
+.logo, .personal, button, p{
+    cursor: pointer;
+}
+.logo{
+    width: 66px;
+    height: 41.8px;
+}
+.personal, button{
+    transition: 0.5s;
+}
+.personal{
+    width: 40px;
+    height: 40px;
+}
+button{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 200px;
+    height: 40px;
+    background: #297FFF;
+    border: none;
+    border-radius: 10px;
+    margin-right: 48px;
+}
+header > p{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 121.4%;
+    text-align: right;
+    letter-spacing: 0.1em;
+    color: #14233D;
+}
+/* .personal:hover{
+    background-image: url(../img/header/personal-account-active.svg);
+} */
+button:hover{
+    background: #005EFF;
+}
+@media(max-width: 1152px){
+    header{
+        column-gap: 15px;
+    }
+}
+@media(max-width: 1024px){
+    header{
+        grid-template-columns: 87px 450px 213px 121px 1fr;
+        justify-items: right;
+        column-gap: 17px;
+    }
+}
