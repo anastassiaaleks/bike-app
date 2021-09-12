@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import * as styles from './AboutUs.module.css'
 import {ReactComponent as Cycling} from './../../assets/img/aboutUs/about-us-img.svg'
 // import {ReactComponent as Author} from './../../assets/img/aboutUs/author.svg'
@@ -6,15 +6,6 @@ import {ReactComponent as Cycling} from './../../assets/img/aboutUs/about-us-img
 import Slider from './Slider/Slider'
 
 const AboutUs = () => {
-    const [sliderId, setSliderId] = useState(0)
-
-    function clickLeft(){
-        sliderId>1 ? setSliderId(sliderId-1) : setSliderId(4)
-    }
-    function clickRight(){
-        sliderId<4 ? setSliderId(sliderId+1) : setSliderId(0)
-    }
-    
     return (
         <section>
             <div className={styles.aboutUs}>
@@ -29,11 +20,7 @@ const AboutUs = () => {
             </div>
             <div className={styles.reviews}>
                 <h3>Отзывы</h3>
-                <div className={styles.listReviews}>
-                    <Slider sliderId={sliderId}/>
-                    <span onClick={()=>clickLeft()} className={styles.left}>&#5176;</span>
-                    <span onClick={()=>clickRight()} className={styles.right}>&#5171;</span>
-                </div>
+                <Slider />
             </div>
         </section>
     )

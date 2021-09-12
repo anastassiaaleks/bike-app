@@ -1,7 +1,7 @@
 .aboutUs{
     margin: 0 auto;
     width: 1160px;
-    height: 400px;
+    height: fit-content;
     background: #F2F4F7;
     border-radius: 20px;
     padding: 61px 40px;
@@ -10,7 +10,7 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
+    font-size: calc(32px + 16 * (100vw / 1240));
     line-height: 120%;
     color: #14233D;
     margin-bottom: 45px;
@@ -18,14 +18,14 @@
 }
 .info{
     display: grid;
-    grid-template-columns: 575px 535px;
+    grid-template-columns: 1fr 1fr;
     column-gap: 20px;
 }
 p{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: calc(16px + 2 * (100vw / 1240));
     line-height: 140%;
     color: #14233D;
 }
@@ -49,28 +49,37 @@ p{
     color: #14233D;
     margin-bottom: 36px;
 }
+.reviewsDiv{
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+}
+.right, .left{
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    margin: 0 auto;
+    height: calc(100% - 135px);
+    padding-top: 135px;
+}
 .listReviews{
     position: relative;
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     height: 301px;
+    column-gap: 15px;
     overflow: hidden;
 }
 .right, .left{
-    position: absolute;
+    text-align: center;
+    width: 100%;
     font-size: 30px;
-    top: calc(150px - 15px);
-}
-.right{
-    right: 0;
-}
-.left{
-    left: 0;
+    margin: 0 auto;
+    height: calc(100% - 135px);
+    padding-top: 135px;
 }
 .reviewItem{
     position: relative;
-    width: 360px;
     height: 301px;
     background: #FFFFFF;
     border-radius: 15px;
@@ -78,7 +87,7 @@ p{
 }
 .reviewItem>p{
     padding: 24px 27px;
-    font-size: 16px;
+    font-size: calc(14px + 2 * (100vw / 1240));
     line-height: 140%;
 }
 .reviewItem>span{
@@ -90,11 +99,123 @@ p{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: calc(14px + 2 * (100vw / 1240));
     line-height: 20px;
     text-transform: uppercase;
     color: #ABB1C5;
 }
 .author{
     margin-right: 20px;
+}
+
+
+@media(max-width: 1152px) {
+    .aboutUs{
+        width: 1092px;
+        height: 380px;
+        padding: 36px 30px;
+    }
+    .aboutUs > h1{
+        margin-bottom: 25px;
+    }
+    .reviews{
+        width: 1092px;
+        height: 390px;
+        padding: 46px 30px;
+        
+    }
+    .reviews>h3{
+        margin-bottom: 30px;
+    }
+    .listReviews{
+        column-gap: 20px;
+    }
+}
+
+@media(max-width: 1024px){
+    .aboutUs{
+        width: 964px;
+        height: 425px;
+    }
+    .info>svg{
+        width: 470px;
+    }
+    .reviews{
+        width: 964px;
+    }
+}
+
+@media(max-width: 800px){
+    .aboutUs{
+        width: 750px;
+        height: 670px;
+        padding: 30px 25px;
+    }
+    .info{
+        grid-template-columns: 1fr; /* bp */
+    }
+    .info>div>p:nth-child(2){
+        margin-bottom: 22px;  
+    }
+    
+    .info>svg{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .reviews{
+        width: 750px;
+        padding: 35px 25px;
+        
+    }
+    .listReviews{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+}
+
+@media(max-width: 768px){
+    .aboutUs{
+        width: 728px;
+        padding: 25px 20px;
+    }
+    .reviews{
+        width: 728px;
+        padding: 30px 20px;
+    }
+    .listReviews{
+        column-gap: 15px;
+    }
+}
+
+@media(max-width: 425px){
+    .aboutUs{
+        width: 395px;
+        padding: 15px 15px;
+    }
+    .reviews{
+        width: 395px;
+        padding: 25px 15px;
+    }
+    .listReviews{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 375px){
+    .aboutUs{
+        width: 346px;
+    }
+    .reviews{
+        width: 346px;
+    }
+}
+
+@media(max-width: 320px){
+    .aboutUs{
+        width: 293px;
+        height: 825px;
+    }
+    .reviews{
+        width: 293px;
+    }
 }

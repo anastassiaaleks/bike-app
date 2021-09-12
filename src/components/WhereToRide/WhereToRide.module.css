@@ -1,0 +1,138 @@
+.whereToRide, .routes{
+    margin: 0 auto;
+    width: 1160px;
+    height: fit-content;
+    background: #F2F4F7;
+    border-radius: 20px;
+    padding: 61px 40px;
+    margin-bottom: 40px;
+}
+.whereToRide > h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(32px + 16 * (100vw / 1240));
+    line-height: 120%;
+    color: #14233D;
+    margin-bottom: 45px;
+    margin-top: 0;
+}
+
+.whereToRide>h3, .routes>h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #14233D;
+    margin-bottom: 35px;
+}
+
+.whereToRide> p, .info>p, .parkImg>div>p{
+    max-width: 760px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(16px + 2 * (100vw / 1240));
+    line-height: 140%;
+    color: #14233D;
+    margin-bottom: 24px;
+}
+.imgRide{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 15px;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.parkImg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 15px;
+}
+.parkImg>div>p{
+    margin-top: 15px;
+    font-size: calc(14px + 2 * (100vw / 1240));
+}
+@media(max-width: 1152px){
+    .whereToRide, .routes {
+        width: 1088px;
+        padding: 42px 32px;
+    }
+    .imgRide>img{
+        width: 90%;
+    }
+}
+@media(max-width: 1024px){
+    .whereToRide, .routes {
+        width: 960px;
+        padding: 42px 32px;
+    }
+    .parkImg{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 15px;
+    }
+    .parkImg>div>img{
+        width: 120%;
+    }
+}
+@media(max-width: 800px){
+    .whereToRide, .routes {
+        width: 748px;
+        padding: 30px 26px;
+    }
+    .info{
+        grid-template-columns: 1fr;
+    }
+    .info>img{
+        margin: 0 auto;
+        width: 85%;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 768px){
+    .whereToRide, .routes {
+        width: 720px;
+        padding: 28px 24px;
+    }
+    .parkImg>div>img{
+        width: 90%;
+    }
+}
+@media(max-width: 425px){
+    .whereToRide, .routes {
+    width: 391px;
+    padding: 20px 17px;
+    }   
+}
+@media(max-width: 375px){
+    .whereToRide, .routes {
+        width: 345px;
+        padding: 20px 15px;
+    }
+    .imgRide {
+        row-gap: 15px;
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 320px){
+    .whereToRide, .routes {
+        width: 290px;
+    }
+    .parkImg {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+

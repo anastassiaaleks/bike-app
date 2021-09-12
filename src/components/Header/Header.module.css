@@ -8,21 +8,21 @@ header{
     column-gap: 40px;
     justify-items: center;
 }
-.logo, .personal, button, p{
+.logo, .personal, .btnFeedback, p{
     cursor: pointer;
 }
 .logo{
     width: 66px;
     height: 41.8px;
 }
-.personal, button{
+.personal, .btnFeedback{
     transition: 0.5s;
 }
 .personal{
     width: 40px;
     height: 40px;
 }
-button{
+.btnFeedback{
     font-family: Montserrat;
     font-weight: 600;
     font-size: 14px;
@@ -35,7 +35,6 @@ button{
     background: #297FFF;
     border: none;
     border-radius: 10px;
-    margin-right: 48px;
 }
 header > p{
     font-family: Montserrat;
@@ -46,12 +45,20 @@ header > p{
     letter-spacing: 0.1em;
     color: #14233D;
 }
-/* .personal:hover{
-    background-image: url(../img/header/personal-account-active.svg);
-} */
-button:hover{
+.btnFeedback:hover{
     background: #005EFF;
 }
+
+.menu{
+    height: 52px;
+    background-color: #fff;
+    margin: 0 auto;
+    border: none;
+}
+.menu>span{
+    font-size: 36px;
+}
+
 @media(max-width: 1152px){
     header{
         column-gap: 15px;
@@ -59,8 +66,31 @@ button:hover{
 }
 @media(max-width: 1024px){
     header{
-        grid-template-columns: 87px 450px 213px 121px 1fr;
+        grid-template-columns: 87px auto 213px 121px 80px;
         justify-items: right;
         column-gap: 17px;
+    }
+}
+@media(max-width: 425px){
+    header{
+        grid-template-columns: 75px auto 65px;
+        column-gap: 12px;
+    }
+    header > p{
+        display: none;
+    }
+    .logo{
+        width: 55px;
+    }
+    .personal{
+        height: 48px;
+    }
+    .btnFeedback{
+        display: none;
+    }
+}
+@media(max-width: 375px){
+    header{
+        grid-template-columns: 75px auto 55px;
     }
 }
