@@ -3,6 +3,7 @@ import Footer from './components/Footer/Footer';
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import AboutUs from './components/AboutUs/AboutUs';
 import WhereToRide from './components/WhereToRide/WhereToRide';
+import Contacts from './components/Contacts/Contacts';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <WhereToRide />
         </Route>
         <Route path='/contacts'>
-          contacts
+          <Contacts />
         </Route>
       </Switch>
       <Footer />

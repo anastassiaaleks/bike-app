@@ -1,0 +1,148 @@
+.contactsSection{
+    margin: 0 auto;
+    width: 1160px;
+    height: fit-content;
+    background: #F2F4F7;
+    border-radius: 20px;
+    padding: 61px 40px;
+    margin-bottom: 40px;
+}
+.contactsSection>h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(32px + 16 * (100vw / 1240));
+    line-height: 120%;
+    color: #14233D;
+    margin-bottom: 42px;
+    margin-top: 0;
+
+}
+.contacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 60px;
+}
+.personalInfo>div{
+    margin-bottom: 30px;
+}
+.personalInfo>div>span, form>span{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ABB1C5;
+    margin-bottom: 10px;
+}
+.personalInfo>div>p, form>p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #14233D;
+}
+.inputDiv{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 35px;
+}
+input{
+    background: #FFFFFF;
+    border: 1px solid #DDE3EB;
+    box-sizing: border-box;
+    padding: 19px;
+    border-radius: 15px;
+    max-width: 560px;
+    margin-bottom: 20px;
+}
+input::placeholder{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #737B98;
+}
+.check{
+    width: 30px;
+    height: 16px;
+    background: #297FFF;
+    border-radius: 10px;
+}
+.consent>span{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #14233D;
+}
+.btnSend{
+    width: 100%;
+    max-width: 560px;
+    height: 60px;
+    background: #297FFF;
+    border: none;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-top: 28px;
+}
+.map{
+    background-color: rgb(108, 184, 194);
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+}
+@media(max-width: 1152px) {
+    .contactsSection{
+        width: 1092px;
+        padding: 36px 30px;
+    }
+}
+@media(max-width: 1024px){
+    .contactsSection{
+        width: 964px;
+    }
+}
+
+@media(max-width: 800px){
+    .contactsSection{
+        width: 750px;
+        padding: 30px 25px;
+    }
+}
+@media(max-width: 768px){
+    .contactsSection{
+        width: 728px;
+        padding: 25px 20px;
+    }
+}
+@media(max-width: 425px){
+    .contactsSection{
+        width: 395px;
+        padding: 15px 15px;
+    }
+    .contacts {
+        grid-template-columns: 1fr;
+    }
+    .map{
+        height: 300px;
+    }
+}
+@media(max-width: 375px){
+    .contactsSection{
+        width: 345px;
+    }
+}
+@media(max-width: 320px){
+    .contactsSection{
+        width: 290px;
+    }
+} 
