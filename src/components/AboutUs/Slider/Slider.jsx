@@ -23,11 +23,11 @@ const Slider = () => {
     })
     return (
         <div className={styles.reviewsDiv}>
-            <span onClick={()=>clickLeft()} className={styles.left}>&#5176;</span>
+            <span onClick={()=>clickLeft()} className={styles.left}>&#9668;</span>
             <div className={styles.listReviews}>
                 {list}
             </div>
-            <span onClick={()=>clickRight()} className={styles.right}>&#5171;</span> 
+            <span onClick={()=>clickRight()} className={styles.right}>&#9658;</span> 
         </div>
     )
 }

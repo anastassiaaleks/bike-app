@@ -36,7 +36,10 @@ header{
     border: none;
     border-radius: 10px;
 }
-header > p{
+header > a{
+    text-decoration: none;
+}
+header > a> p{
     font-family: Montserrat;
     font-weight: bold;
     font-size: 37px;
@@ -46,17 +49,8 @@ header > p{
     color: #14233D;
 }
 .btnFeedback:hover{
+    transition: 0.5s;
     background: #005EFF;
-}
-
-.menu{
-    height: 52px;
-    background-color: #fff;
-    margin: 0 auto;
-    border: none;
-}
-.menu>span{
-    font-size: 36px;
 }
 
 @media(max-width: 1152px){
@@ -71,7 +65,7 @@ header > p{
         column-gap: 17px;
     }
 }
-@media(max-width: 425px){
+@media(max-width: 426px){
     header{
         grid-template-columns: 75px auto 65px;
         column-gap: 12px;
@@ -89,8 +83,11 @@ header > p{
         display: none;
     }
 }
-@media(max-width: 375px){
+@media(max-width: 376px){
     header{
         grid-template-columns: 75px auto 55px;
+    }
+    .btnFeedback{
+        display: none;
     }
 }

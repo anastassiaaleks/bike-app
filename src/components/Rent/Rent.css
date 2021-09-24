@@ -1,0 +1,137 @@
+.displayNone{
+    display: none;
+}
+
+.bikes, .promo{
+    margin: 0 auto;
+    height: fit-content;
+    background-color: #F2F4F7;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.promo{
+    padding: 0 0 40px 40px;
+    width: 1200px;
+}
+.promoTop{
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+.promoTop>h1{
+    padding-top: 33px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: #14233D;
+}
+.gifts{
+    width: 100%;
+}
+.bikes{
+    width: 1160px;
+    padding: 33px 40px 40px;
+}
+
+.bikes>h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ABB1C5;
+}
+.bikeTypes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.bikeTypeItem{
+    padding-top: 35px;
+    position: relative;
+    background-color: #F2F4F7;
+    width: 260px;
+    height: 264px;
+}
+.bikeTypeItem>img{
+    width: 100%;
+    position: absolute;
+    top: 35px;
+    z-index: 5;
+}
+.itemInfo{
+    position: absolute;
+    bottom: 0;
+    width: 216px;
+    padding: 48px 24px 10px 20px;
+    height: 97px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+.itemInfo>span{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #14233D;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+.price>p, .info, .add{
+    color: #297FFF;
+}
+.price>p{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+}
+.btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+.info, .add{
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDE3EB;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.activeType{
+    width: 40px;
+    height: 40px;
+    background-color: #297FFF;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+
+.add:hover, .info:hover{
+    transition: 0.5s;
+    color: #FFFFFF;
+    background-color: #297FFF;
+}
+.tooltipDiv{
+    width: 260px;
+    height: fit-content;
+    background: #FFFFFF;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ABB1C5;
+    padding: 16px 12px;
+    border: 1px solid #DDE3EB;
+    transition: .5s;
+}
+.find {
+    width: 140px;
+    margin: 0 auto;
+    color: #ABB1C5;
+    text-decoration: underline;
+}

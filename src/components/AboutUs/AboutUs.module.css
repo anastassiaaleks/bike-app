@@ -71,6 +71,8 @@ p{
     overflow: hidden;
 }
 .right, .left{
+    color: #ABB1C5;
+    cursor: pointer;
     text-align: center;
     width: 100%;
     font-size: 30px;
@@ -187,9 +189,10 @@ p{
     }
 }
 
-@media(max-width: 425px){
+@media(max-width: 426px){
     .aboutUs{
         width: 395px;
+        height: fit-content;
         padding: 15px 15px;
     }
     .reviews{

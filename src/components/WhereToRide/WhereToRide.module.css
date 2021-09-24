@@ -106,7 +106,7 @@
         width: 90%;
     }
 }
-@media(max-width: 425px){
+@media(max-width: 426px){
     .whereToRide, .routes {
     width: 391px;
     padding: 20px 17px;

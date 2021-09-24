@@ -1,5 +1,11 @@
-.delivery{
-    position: relative;
+p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #14233D;
+  }
+  
+  .rules{
     margin: 0 auto;
     height: fit-content;
     background-color: #F2F4F7;
@@ -7,22 +13,9 @@
     margin-bottom: 40px;
     padding: 40px 40px;
     width: 1160px;
-  
-  }
-  .deliveryConditions > li, .delivery> p{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    color: #14233D;
-    margin-bottom: 15px;
-    max-width: 900px;
-
-  }
-  .deliveryConditions >li{
-    list-style-type: decimal;
   }
   
-  .delivery>h1{
+  .rules>h1{
     padding-top: 33px;
     font-weight: 600;
     font-size: 48px;
@@ -31,78 +24,82 @@
     margin-bottom: 52px;
   }
   
-  .delivery>h3{
+  .rules>h3{
     font-weight: 600;
     font-size: 28px;
     line-height: 31px;
     color: #14233D;
-    margin: 30px 0;
+    margin-bottom: 30px;
+  }
+  .rules>p{
+    max-width: 760px;
+    margin-bottom: 20px;
+  }
+  .conditions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 37px;
+  }
+  .conditionsItem{
+    height: fit-content;
+  }
+  .conditionsItem > p:first-child{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ABB1C5;
+    margin-bottom: 13px;
   }
   
-  .deliveryConditions{
-    max-width: 750px;
-    margin: 30px 0;
-    padding-left: 22px;
-  }
-  .deliveryConditions>li>span{
-    font-weight: bold;
   
-  }
   
-  .delivery > img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 50%;
-    max-height: 550px;
-  }
   @media(max-width: 1152px) { 
-    .delivery {
+    .rules {
       width: 1092px;
       padding: 33px 30px 40px;
     }
   }
   
   @media(max-width: 1024px){
-    .delivery {
+    .rules {
       width: 992px;
       padding: 33px 16px 40px;
-  }
-  .delivery > img {
-    height: 350px;
   }
   }
   @media(max-width: 800px){
   
-  .delivery {
+  .rules {
     width: 770px;
     padding: 32px 15px 40px;
-  }
-  .delivery > img {
-    display: none;
   }
   }
   
   @media(max-width: 768px){
-  .delivery {
+  .rules {
     width: 738px;
   }
   }
   
   @media(max-width: 426px){
-  .delivery {
+  .rules {
     width: 395px;
+  }
+  .conditions{
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   }
   
   @media (max-width: 376px){
-  .delivery {
+  .rules {
     width: 345px;
   }
   }
   
   @media (max-width: 320px){
-  .delivery {
+  .rules {
     width: 300px;
     padding: 24px 10px 36px;
   }

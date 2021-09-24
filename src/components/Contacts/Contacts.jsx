@@ -1,6 +1,10 @@
 import React from 'react'
+import ContactUsForm from '../ContactUsForm/ContactUsForm';
 import * as styles from './Contacts.module.css'
+import YandexMap from './YandexMap';
+import ScrollToTop from '../../ScrollToTop';
 const Contacts = () => {
+    ScrollToTop()
     return (
         <section className={styles.contactsSection}>
             <h1>Контакты</h1>
@@ -21,22 +25,11 @@ const Contacts = () => {
                         </div>
                     </div>
                 </div>
-                <form >
-                    <span>Оставить заявку</span>
-                    <p>Остались вопросы? Свяжитесь с нами</p>
-                    <div className={styles.inputDiv}>
-                        <input type="text" name="name" placeholder="Имя*" required />
-                        <input type="tel" name="telephone" placeholder="Номер телефона*" required />
-                    </div>
-                    <div className={styles.consent}>
-                        <input className={styles.check} type="checkbox" />
-                        <span>Согласие на обработку персональных данных</span>
-                    </div>
-                    <button className={styles.btnSend}>Отправить</button>
-                </form>
+                <ContactUsForm />
             </div>
-            <div className={styles.map}></div>
+            <YandexMap />
         </section>
+        
     )
 }
 

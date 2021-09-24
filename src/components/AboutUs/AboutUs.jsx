@@ -1,11 +1,11 @@
 import React from 'react'
 import * as styles from './AboutUs.module.css'
 import {ReactComponent as Cycling} from './../../assets/img/aboutUs/about-us-img.svg'
-// import {ReactComponent as Author} from './../../assets/img/aboutUs/author.svg'
-// import data from './dataReviews'
 import Slider from './Slider/Slider'
+import ScrollToTop from '../../ScrollToTop'
 
 const AboutUs = () => {
+    ScrollToTop()
     return (
         <section>
             <div className={styles.aboutUs}>

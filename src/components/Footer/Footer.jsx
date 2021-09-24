@@ -2,6 +2,7 @@ import React from 'react'
 import * as styles from './Footer.module.css'
 import Facebook from './../../assets/img/footer/facebook.svg'
 import Insta from './../../assets/img/footer/insta.svg'
+import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -9,17 +10,17 @@ const Footer = () => {
             <section className={styles.footer}>
                 <div className={styles.footerTop}>
                     <ul className={styles.ulTop}>
-                        <li>Аренда велосипедов</li>
-                        <li>Правила</li>
-                        <li>Отзывы</li>
-                        <li>Контакты</li>
-                        <li>Обратная связь</li>
+                        <NavLink to='/rent'>Аренда велосипедов</NavLink>
+                        <NavLink to='/rent'><li>Алюминий</li></NavLink>
+                        <NavLink to='/rent'><li>Карбон</li></NavLink>
+                        <NavLink to='/rent'><li>Горные/городские</li></NavLink>
+                        <NavLink to='/rent'><li>Городские эконом</li></NavLink>
                     </ul>
                     <ul className={styles.ulBottom}>
-                        <li>Правила</li>
-                        <li>Отзывы</li>
-                        <li>Контакты</li>
-                        <li>Обратная связь</li>
+                        <NavLink to='/rules'>Правила</NavLink>
+                        <NavLink to='/about-us'>Отзывы</NavLink>
+                        <NavLink to='/contacts'>Контакты</NavLink>
+                        <NavLink to='/contacts'>Обратная связь</NavLink>
                     </ul>
                 </div>
                 <div className={styles.footerBottom}>

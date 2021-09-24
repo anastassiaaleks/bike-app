@@ -43,7 +43,7 @@
     line-height: 22px;
     color: #14233D;
 }
-.inputDiv{
+/* .inputDiv{
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 35px;
@@ -93,13 +93,7 @@ input::placeholder{
     line-height: 22px;
     color: #FFFFFF;
     margin-top: 28px;
-}
-.map{
-    background-color: rgb(108, 184, 194);
-    width: 100%;
-    height: 500px;
-    border-radius: 20px;
-}
+} */
 @media(max-width: 1152px) {
     .contactsSection{
         width: 1092px;
@@ -124,16 +118,13 @@ input::placeholder{
         padding: 25px 20px;
     }
 }
-@media(max-width: 425px){
+@media(max-width: 426px){
     .contactsSection{
         width: 395px;
         padding: 15px 15px;
     }
     .contacts {
         grid-template-columns: 1fr;
-    }
-    .map{
-        height: 300px;
     }
 }
 @media(max-width: 375px){

@@ -1,0 +1,284 @@
+.mainDivBike{
+    margin: 0 auto;
+    height: fit-content;
+    background-color: #F2F4F7;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding: 40px 40px;
+    width: 1160px;
+    margin-top: 40px;
+
+}
+
+
+.bikesList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .bikeItem{
+    width: 230px;
+    height: fit-content;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 16px 15px 20px;
+  }
+  
+  .bikeItemTop{
+    display: flex;
+    justify-content: space-between;
+  }
+  .bikeItemTop>p, .bikeItemTop>span{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ABB1C5;
+  }
+  .bikeItemTop>span{
+    font-weight: 800;
+  }
+  .imgDiv{
+    text-align: center;
+    padding: 26px 24px;
+    background-color: #F2F4F7;
+    margin: 15px 0;
+  }
+  .imgDiv>img{
+    width: 100%;
+  }
+  .bikeItem>h3{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #14233D;
+    margin-bottom: 11px;
+    height: 65px;
+  }
+  .bikeItem>span{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;  
+    color: #297FFF;
+  }
+  
+
+  .nextStep{
+    border: none;
+    background-color: #297FFF;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-left: calc(50% - 130px);
+    padding: 19px 96px;
+    text-decoration: none;
+    margin-top: 50px;
+}
+.nextStep:hover{
+    transition: 0.5s;
+    background: #005EFF;
+}
+
+
+.chooseBike{
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #297FFF;
+    padding: 9px 0;
+    margin-top: 25px;
+    border: 1px solid rgba(41, 127, 255, 1);
+  }
+.chooseBike:hover{
+  transition: 0.5s;
+  background-color: #297FFF;
+  color: #FFFFFF;
+
+}
+.activeBikeItem{
+  background-color: #297FFF;
+  color: #FFFFFF;
+}
+.activeBikeItem:hover{
+  transition: 0.5s;
+  background: #005EFF;
+}
+
+
+@media(max-width: 1152px) { 
+  .promo{
+      width: 1122px;
+      padding: 0 0 36px 30px;
+  }
+  .bikes {
+    width: 1092px;
+    padding: 33px 30px 40px;
+  }
+  .bikeTypes {
+    gap: 12px;
+  }
+  .mainDivBike {
+    padding: 40px 30px;
+    width: 1092px;
+  }
+  .bikesList {
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+}
+
+@media(max-width: 1024px){
+  .promo {
+    width: 1003px;
+    padding: 0 0 36px 21px;
+  } 
+  .bikes {
+    width: 992px;
+    padding: 33px 16px 40px;
+}
+.bikeTypeItem {
+  width: 230px;
+}
+.itemInfo {
+  width: 186px;
+}
+.mainDivBike {
+  padding: 40px 22px;
+  width: 980px;
+}
+.bikesList {
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 30px;
+}
+}
+@media(max-width: 800px){
+.promo {
+  width: 782px;
+  padding: 0 0 36px 18px;
+}
+.promoTop>h1 {
+  padding-top: 10px;
+  font-size: 37px;
+}
+.bikes {
+  width: 770px;
+  padding: 32px 15px 40px;
+}
+.bikeTypeItem{
+  width: 260px;
+}
+.itemInfo{
+  width: 216px;
+}
+.bikeTypes {
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.mainDivBike {
+  padding: 40px 14px;
+  width: 772px;
+}
+.bikeItem {
+  width: 210px;
+}
+.bikesList {
+  gap: 20px;
+}
+}
+
+@media(max-width: 768px){
+  .promo {
+    width: 753px;
+    padding: 0 0 36px 15px;
+  }
+  .promoTop {
+    grid-template-columns: 57% 43%;
+}
+.bikes {
+  width: 738px;
+}
+.mainDivBike {
+  padding: 40px 10px;
+  width: 748px;
+}
+.bikeItem {
+  width: 204px;
+}
+
+}
+
+@media(max-width: 426px){
+.promo {
+  width: 395px;
+  padding: 26px 15px;
+}
+.promoTop {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.bikes {
+  width: 395px;
+}
+.bikeTypes {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.mainDivBike {
+  width: 405px;
+}
+.bikeItem {
+  width: 158px;
+  padding: 13px 10px 15px;
+}
+.bikesList {
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (max-width: 376px){
+.promo {
+    width: 355px;
+    padding: 20px 10px;
+}
+.bikes {
+  width: 345px;
+}
+.mainDivBike {
+  width: 355px;
+}
+.bikeItem {
+  width: 152px;
+}
+}
+
+@media (max-width: 320px){
+.promo {
+    width: 300px;
+}
+.promoTop>h1 {
+  font-size: 26px;
+}
+.bikes {
+  width: 300px;
+  padding: 24px 10px 36px;
+}
+.bikeTypes {
+  gap: 12px;
+}
+.mainDivBike {
+  width: 300px;
+}
+.bikesList {
+  grid-template-columns: 1fr;
+}
+.bikeItem {
+  width: 240px;
+}
+}
