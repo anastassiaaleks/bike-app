@@ -1,21 +1,28 @@
 import React, { useState, useRef, useEffect } from 'react'
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
+
+import dataBikeTypes from './components/Rent/dataBikeTypes'
+import dataBikes from './components/Rent/ChooseBike/dataBikes';
+
+import Data from './context';
+
+import Header from './components/Header/Header';
 import AboutUs from './components/AboutUs/AboutUs';
 import WhereToRide from './components/WhereToRide/WhereToRide';
 import Contacts from './components/Contacts/Contacts';
 import Rent from './components/Rent/Rent';
-import Rules from './components/Rules/Rules';
-import dataBikeTypes from './components/Rent/dataBikeTypes'
-import dataBikes from './components/Rent/ChooseBike/dataBikes';
-import Data from './context';
 import Delivery from './components/Delivery/Delivery';
-import Order from './components/Rent/Order/Order';
+import Order from './components/Order/Order';
+import Rules from './components/Rules/Rules';
+import ApprovedOrder from './components/ApprovedOrder/ApprovedOrder';
+import PersonalAcc from './components/PersonalAcc/PersonalAcc';
+import Footer from './components/Footer/Footer';
+
 
 function App() {
   const [activeType, setActiveType]=useState([]) 
   const [activeBikeItem, setActiveBikeItem]=useState([])
+
   const selectedBikes = useRef([]);
   const itemsActiveType = useRef([]);
 
@@ -24,7 +31,7 @@ function App() {
   }, [dataBikeTypes]);
 
   useEffect(() => {
-      selectedBikes.current = selectedBikes.current.slice(0, selectedBikes.length);
+    selectedBikes.current = selectedBikes.current.slice(0, selectedBikes.length);
   }, [dataBikes]);
   
   const chooseBikeType=(id, typeName)=>{
@@ -55,6 +62,9 @@ function App() {
           <Route path='/order'>
             <Order />
           </Route>
+          <Route path='/approved'>
+            <ApprovedOrder />
+          </Route>
           <Route path='/delivery'>
             <Delivery />
           </Route>
@@ -68,7 +78,7 @@ function App() {
             <Rules />
           </Route>
           <Route path='/personal-account'>
-            personal-account
+            <PersonalAcc />
           </Route>
         </Switch>
         <Footer />

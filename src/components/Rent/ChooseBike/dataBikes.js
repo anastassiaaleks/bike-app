@@ -6,17 +6,23 @@ const dataBikes = [
         frameSize: 13,
         brand: 'Schwinn',
         src: bikeImg,
-        name: 'Городской велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Городской велосипед Schwinn Traveler 13”',
+        price: 45,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 1,
         type:'economical',
-        frameSize: 18,
+        frameSize: 20,
         brand: 'Foxx',
         src: bikeImg,
-        name: 'Городской велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Городской велосипед Foxx 20”',
+        price: 45,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 2,
@@ -24,8 +30,11 @@ const dataBikes = [
         frameSize: 22,
         brand: 'Schwinn',
         src: bikeImg,
-        name: 'Городской велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Городской велосипед Schwinn Traveler 22”',
+        price: 45,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 3,
@@ -33,8 +42,11 @@ const dataBikes = [
         frameSize: 19,
         brand: 'Schwinn',
         src: bikeImg,
-        name: 'Городской велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Городской велосипед Schwinn Traveler 19”',
+        price: 45,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 4,
@@ -42,8 +54,11 @@ const dataBikes = [
         frameSize: 22,
         brand: 'Foxx',
         src: bikeImg,
-        name: 'Карбоновый велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Карбоновый велосипед Foxx Traveler 22”',
+        price: 180,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 5,
@@ -51,8 +66,11 @@ const dataBikes = [
         frameSize: 13,
         brand: 'Schwinn',
         src: bikeImg,
-        name: 'Карбоновый велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Карбоновый велосипед Schwinn Traveler 13”',
+        price: 180,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 6,
@@ -60,8 +78,11 @@ const dataBikes = [
         frameSize: 18,
         brand: 'Foxx',
         src: bikeImg,
-        name: 'Карбоновый велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Карбоновый велосипед Foxx Traveler 18”',
+        price: 180,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 7,
@@ -69,8 +90,11 @@ const dataBikes = [
         frameSize: 22,
         brand: 'Schwinn',
         src: bikeImg,
-        name: 'Горный велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Горный велосипед Schwinn Traveler 22”',
+        price: 90,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 8,
@@ -79,7 +103,10 @@ const dataBikes = [
         brand: 'Schwinn',
         src: bikeImg,
         name: 'Горный велосипед Schwinn Traveler 20”',
-        price: 90
+        price: 90,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 9,
@@ -87,8 +114,11 @@ const dataBikes = [
         frameSize: 22,
         brand: 'Foxx',
         src: bikeImg,
-        name: 'Горный велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Горный велосипед Foxx Traveler 22”',
+        price: 90,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 10,
@@ -96,8 +126,11 @@ const dataBikes = [
         frameSize: 13,
         brand: 'Schwinn',
         src: bikeImg,
-        name: 'Горный велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Горный велосипед Schwinn Traveler 13”',
+        price: 90,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 11,
@@ -105,8 +138,11 @@ const dataBikes = [
         frameSize: 18,
         brand: 'Foxx',
         src: bikeImg,
-        name: 'Алюминиевый велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Алюминиевый велосипед Foxx Traveler 18”',
+        price: 90,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 12,
@@ -114,8 +150,11 @@ const dataBikes = [
         frameSize: 22,
         brand: 'Schwinn',
         src: bikeImg,
-        name: 'Алюминиевый велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Алюминиевый велосипед Schwinn Traveler 22”',
+        price: 90,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 13,
@@ -123,8 +162,11 @@ const dataBikes = [
         frameSize: 19,
         brand: 'Schwinn',
         src: bikeImg,
-        name: 'Алюминиевый велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Алюминиевый велосипед Schwinn Traveler 19”',
+        price: 90,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
     {
         id: 14,
@@ -132,8 +174,11 @@ const dataBikes = [
         frameSize: 22,
         brand: 'Foxx',
         src: bikeImg,
-        name: 'Алюминиевый велосипед Schwinn Traveler 20”',
-        price: 90
+        name: 'Алюминиевый велосипед Foxx Traveler 22”',
+        price: 90,
+        helmet: false,
+        lantern: false,
+        lock: false
     },
 ]
 

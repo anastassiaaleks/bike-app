@@ -1,0 +1,202 @@
+.personalDiv{
+    margin: 0 auto;
+    height: fit-content;
+    background-color: #F2F4F7;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding: 40px 40px;
+    width: 1160px;
+  }
+  
+  .personalDiv>h1{
+    text-align: left;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: #14233D;
+    margin-bottom: 52px;
+  }
+  .personalCaption, .personalItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+  }
+  .personalCaption>p, .hiddenCaption>p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ABB1C5;
+  }
+  .personalCaption>p, .personalItem>p{
+    text-align: right;
+  }
+  .personalCaption>p:first-child, .personalItem>p:first-child{
+    text-align: left;
+  }
+  .personalItem{
+    height: 70px;
+    border-bottom: 1px solid #DDE3EB;;
+  }
+  .personalItem>p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #14233D;
+  }
+  .hidden{
+    border-bottom: 1px solid #DDE3EB;;
+    
+  }
+  .hiddenCaption, .hiddenItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hiddenCaption>p:last-child, .hiddenItem>p:last-child{
+    text-align: right;
+  }
+  .hiddenCaption>p{
+    margin-top: 11px;
+    margin-bottom: 10px;
+  }
+  .hiddenItem>p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #14233D;
+    margin-bottom: 14px;
+  }
+  
+  .cancel{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #297FFF;
+    border: 1px solid #297FFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 220px;
+    height: 55px;
+    margin: 40px auto;
+    margin-left: calc(100% - 220px);
+  
+  }
+  .cancel:hover{
+    transition: 0.5s;
+    color: #005EFF;
+    border: 1px solid #005EFF;
+  }
+  
+  /* .wholeItem{
+    height: 71px;
+    overflow: hidden;
+  } */
+  
+  
+  
+  
+  
+  
+  
+  @media(max-width: 1152px) { 
+    .personalDiv {
+      width: 1092px;
+      padding: 33px 30px 40px;
+    }
+  }
+  
+  @media(max-width: 1024px){
+    .personalDiv {
+      width: 992px;
+      padding: 33px 16px 40px;
+  }
+  
+  .personalDiv>h1 {
+    font-size: 38px;
+  }
+  }
+  @media(max-width: 800px){
+  
+  .personalDiv {
+    width: 770px;
+    padding: 32px 15px 40px;
+  }
+  
+  .personalDiv>h1 {
+    font-size: 38px;
+  }
+  }
+  
+  @media(max-width: 768px){
+  .personalDiv {
+    width: 738px;
+  }
+  }
+  
+  @media(max-width: 426px){
+  .personalDiv {
+    width: 395px;
+  }
+  
+  .personalDiv>h1 {
+    font-size: 33px;
+  }
+  .personalItem>p {
+    font-size: 15px;
+  }
+  .personalCaption>p, .hiddenCaption>p {
+    font-size: 13px;}
+  }
+  .cancel {
+    font-weight: bold;
+    font-size: 18px;}
+  
+  @media (max-width: 376px){
+  .personalDiv {
+    width: 345px;
+  }
+  .personalDiv>h1 {
+    font-size: 27px;
+  }
+  .hiddenCaption, .hiddenItem {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .personalItem>p {
+    font-size: 13px;
+  }
+  .personalCaption>p, .hiddenCaption>p {
+    font-size: 12px;
+  }
+  .cancel {
+    font-weight: bold;
+    font-size: 16px;
+    height: 45px;
+    width: 180px;
+    margin-left: calc(100% - 180px);
+  }
+  .hiddenItem>p {
+    font-size: 14px;
+  }}
+  
+  @media (max-width: 321px){
+  .personalDiv {
+    width: 300px;
+    padding: 24px 10px 36px;
+  }
+  .personalDiv>h1 {
+    font-size: 24px;
+  }
+  .personalItem>p {
+    font-size: 12px;
+  }
+  .personalCaption>p, .hiddenCaption>p {
+    font-size: 11px;
+  }
+  .cancel {
+    font-weight: bold;
+    font-size: 14px;
+    height: 40px;
+  }
+  } 

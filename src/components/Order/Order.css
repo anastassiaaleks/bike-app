@@ -1,0 +1,310 @@
+.order, .orderForm{
+  margin: 0 auto;
+  height: fit-content;
+  background-color: #F2F4F7;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  padding: 40px 40px;
+  width: 1160px;
+
+}
+.order>h1{
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  color: #14233D;
+  margin-bottom: 52px;
+}
+.caption, .orderItem{
+  display: grid;
+  grid-template-columns: 1fr 9fr 1fr 1fr 1fr 3fr;
+  gap: 40px;
+}
+.caption>p, .total{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ABB1C5;
+}
+.caption>p:last-child{
+  text-align: right;
+
+}
+.orderDiv{
+  margin-top: 13px;
+  display: grid;
+  gap: 30px;
+}
+.orderItem>div{
+  width: 60px;
+}
+.orderItem>div>img{
+  width: 100%;
+}
+.orderItem>p{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #14233D;
+}
+
+.orderItem>input[type="checkbox"]{
+  width: 34px;
+  height: 34px;
+}
+
+.orderItem>span, .totalCount, .totalCount>p:last-child{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: right;
+  color: #297FFF;
+}
+
+.orderBottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalDiv{
+  width: 285px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.divImg{
+  width: 215px;
+}
+.divImg>img{
+  width: 100%;
+}
+.total>p:last-child{
+  margin-top: 11px;
+}
+.totalCount>p{
+  font-weight: 500;
+  color: #14233D;
+}
+.totalCount>p:last-child{
+  margin-top: 11px;
+}
+
+.formDiv{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contactInfo, .contactsRules{
+  max-width: 560px;
+}
+.contactInfo{
+  display: grid;
+}
+.contactsRules{
+  border: 1px solid #DDE3EB;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 20px;
+}
+input{
+  background: #FFFFFF;
+  border: 1px solid #DDE3EB;
+  box-sizing: border-box;
+  padding: 19px;
+  border-radius: 15px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+input::placeholder{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #737B98;
+}
+.contactInfo>h4, .contactsRules>h4{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ABB1C5;
+  margin-bottom: 15px;
+}
+.contactInfo>p, .contactsRules>p{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #14233D;
+  margin-bottom: 27px;
+}
+.bookBtn{
+    border: none;
+    background-color: #297FFF;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-left: calc(50% - 180px);
+    padding: 19px 96px;
+    text-decoration: none;
+    margin-top: 50px;
+  }
+  .bookBtn:hover{
+    transition: 0.5s;
+    background: #005EFF;
+  }
+
+@media(max-width: 1152px) { 
+  .order, .orderForm {
+    width: 1092px;
+    padding: 33px 30px 40px;
+  }
+}
+
+@media(max-width: 1024px){
+  .order, .orderForm {
+    width: 992px;
+    padding: 33px 16px 40px;
+}
+.totalDiv {
+  width: 250px;
+}
+}
+@media(max-width: 800px){
+  .caption, .orderItem {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr 2fr;
+    gap: 31px;
+}
+.order, .orderForm {
+  width: 770px;
+  padding: 32px 15px 40px;
+}
+.order>h1 {
+  padding-top: 5px;
+  font-size: 36px;
+}
+.caption>p{
+  font-size: 12px;
+
+}
+.caption>p:first-child{
+  width: 60px;
+}
+}
+
+@media(max-width: 768px){
+.order, .orderForm {
+  width: 738px;
+}
+.totalDiv {
+  width: 233px;
+}
+}
+
+@media(max-width: 426px){
+.caption, .orderItem {
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+}
+.orderDiv, .orderItem, .order, .orderForm {
+  width: 395px;
+}
+.caption>p, .total>p{
+  font-size: 10px;
+}
+.caption>p:first-child{
+  width: 51px;
+}
+.orderItem>div{
+  width: 45px;
+}
+.orderItem>p{
+  font-size: 12px;
+}
+.orderItem>span{
+  font-size: 15px;
+}
+.orderItem>input[type="checkbox"]{
+  width: 25px;
+  height: 25px;
+}
+.order>h1 {
+  font-size: 29px;
+}
+.caption, .orderItem {
+  gap: 5px;
+}
+.orderBottom {
+  align-items: flex-end;
+  flex-direction: column;
+}
+.divImg{
+  margin-bottom: 10px;
+}
+.totalCount>p:last-child, .totalCount>p {
+  font-size: 15px;
+}
+.totalDiv {
+  width: 181px;
+}
+
+.formDiv{
+  grid-template-columns: 1fr;
+}
+.contactInfo>h4, .contactsRules>h4, input::placeholder {
+  font-size: 13px;
+}
+input{
+  padding: 12px;
+}
+.contactInfo>p, .contactsRules>p {
+  font-size: 12px;
+}
+.bookBtn {
+  font-size: 16px;
+  margin-left: calc(50% - 130px);
+  padding: 14px 60px;
+}
+}
+
+@media (max-width: 376px){
+.orderDiv, .orderItem, .order, .orderForm {
+  width: 345px;
+}
+.order>h1 {
+  font-size: 27px;
+}
+.divImg {
+    margin-bottom: 10px;
+}
+.divImg {
+    width: 185px;
+}
+}
+
+@media (max-width: 320px){
+  
+.orderDiv, .orderItem, .order, .orderForm {
+  width: 300px;
+}
+.order, .orderForm {
+  padding: 24px 10px 36px;
+}
+.order>h1 {
+  font-size: 24px;
+}
+.caption>p:first-child{
+  width: 40px;
+}
+.orderItem>input[type="checkbox"]{
+  width: 25px;
+  height: 25px;
+}
+.divImg {
+  width: 165px;
+}
+}

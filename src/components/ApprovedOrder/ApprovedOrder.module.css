@@ -1,0 +1,199 @@
+.orderApproved{
+    margin: 0 auto;
+    height: fit-content;
+    background-color: #F2F4F7;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding: 40px 40px;
+    width: 1160px;
+  }
+  .orderApproved>h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: #14233D;
+    margin-bottom: 52px;
+  }
+  .list{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .listCaption, .listItem{
+    display: grid;
+    grid-template-columns: 1fr 10fr 2fr;
+    gap: 30px;
+    align-items: center;
+  }
+  .listCaption>p, .totalCaption>p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ABB1C5;
+  }
+  .listCaption>p:last-child{
+    text-align: right;
+  
+  }
+  .listItem>p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #14233D;
+  }
+  .listItem>span, .totalCount>span{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #297FFF;
+    text-align: right;
+  }
+  .divImg{
+    width: 60px;
+  }
+  .divImg>img{
+    width: 100%;
+    background-color: #fff;
+    padding: 5px 2px;
+    border-radius: 5px;
+  }
+  .total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+  }
+  .totalCaption, .totalCount{
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .totalCaption>p:first-child, .totalCount>p:first-child{
+    margin-bottom: 12px;
+  }
+  .totalCount>p{font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: right;
+    color: #14233D;
+  }
+  .divBtns{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 260px 260px;
+    gap: 40px;
+    width: fit-content;
+    margin-top: 30px;
+  }
+  .toPersonalAcc{
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 260px;
+    height: 60px;
+    background: #297FFF;
+    border-radius: 10px;
+  
+  }
+  .toPersonalAcc:hover{
+    transition: 0.5s;
+    background: #005EFF;
+  }
+  .backToRent{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #297FFF;
+    border: 1px solid #297FFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 260px;
+    height: 60px;
+  
+  }
+  .backToRent:hover{
+    transition: 0.5s;
+    color: #005EFF;
+    border: 1px solid #005EFF;
+  }
+  
+  @media(max-width: 1152px) { 
+    .orderApproved {
+      width: 1092px;
+      padding: 33px 30px 40px;
+    }
+  }
+  
+  @media(max-width: 1024px){
+    .orderApproved {
+      width: 992px;
+      padding: 33px 16px 40px;
+  }
+  }
+  @media(max-width: 800px){
+  
+  .orderApproved {
+    width: 770px;
+    padding: 32px 15px 40px;
+  }
+  .orderApproved>h1 {
+    font-size: 38px;
+  }
+  }
+  
+  @media(max-width: 768px){
+  .orderApproved {
+    width: 738px;
+  }
+  }
+  
+  @media(max-width: 426px){
+  .orderApproved {
+    width: 395px;
+  }
+  .orderApproved>h1 {
+      font-size: 33px;
+  }
+  .divBtns {
+    grid-template-columns: 260px;
+    gap: 15px;
+  }
+  .listCaption>p:first-child{
+    width: 60px;
+  }
+  .listCaption, .listItem{
+    gap: 18px;
+    grid-template-columns: 1fr 3fr 2fr;
+  }
+  .totalCaption, .totalCount {
+    width: 134px;
+  }
+  .backToRent, .toPersonalAcc{
+    height: 50px;
+  
+  }
+  }
+  
+  @media (max-width: 376px){
+  .orderApproved {
+    width: 345px;
+  }
+  .orderApproved>h1 {
+    font-size: 27px;
+  }
+  }
+  
+  @media (max-width: 320px){
+  .orderApproved {
+    width: 300px;
+    padding: 24px 10px 36px;
+  }
+  .orderApproved>h1 {
+    font-size: 24px;
+  }
+  }
