@@ -70,7 +70,7 @@ header > a> p{
         grid-template-columns: 75px auto 65px;
         column-gap: 12px;
     }
-    header > p{
+    header >a > p{
         display: none;
     }
     .logo{
@@ -81,6 +81,11 @@ header > a> p{
     }
     .btnFeedback{
         display: none;
+    }
+    .hamburgerMenu {
+        position: absolute;
+        right: 32px;
+        top: 16px;
     }
 }
 @media(max-width: 376px){

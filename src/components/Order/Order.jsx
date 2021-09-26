@@ -49,7 +49,7 @@ const Order = () =>{
             customerTel: orderTel.current.value,
             customerAdress: orderAddress.current.value,
             customerBack: orderBack.current.value || '',
-            total: totalPrice
+            total: totalPrice,
         }
         localStorage.setItem('orderList', JSON.stringify([...listLocal, order]))
         console.log(window.location.pathname)
@@ -90,12 +90,12 @@ const Order = () =>{
                     <div className="formDiv">
                         <div className="contactInfo">
                             <h4>Контактные данные</h4>
-                            <input ref={orderName} type="text" required placeholder="Имя*" />
-                            <input ref={orderTel} type="tel" required placeholder="Номер телефона*" />
+                            <input ref={orderName} minLength='2' type="text" required placeholder="Имя*" />
+                            <input ref={orderTel} minLength='10' type="tel" required placeholder="Номер телефона*" />
                             <h4>Информация о доставке</h4>
-                            <input ref={orderAddress} type="text" required placeholder="Адрес*" />
+                            <input ref={orderAddress} minLength='5' type="text" required placeholder="Адрес*" />
                             <h4>Возврат велосипеда</h4>
-                            <input ref={orderBack} type="text" placeholder="Возврат по адресу" />
+                            <input ref={orderBack} minLength='5' type="text" placeholder="Возврат по адресу" />
                         </div>
                         <div className="contactsRules">
                             <h4>Возвращение велосипеда</h4>

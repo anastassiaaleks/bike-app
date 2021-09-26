@@ -11,14 +11,15 @@ const ContactUsForm = () => {
         inputName.current.value=''
         inputTel.current.value=''
         inputCheck.current.checked=false
+        alert('Заявка отправлена. В ближайшее время с Вами свяжутся.')
     }
     return (
         <form onSubmit={submitForm}>
             <span>Оставить заявку</span>
             <p>Остались вопросы? Свяжитесь с нами</p>
             <div className={styles.inputDiv}>
-                <input ref={inputName} type="text" name="name" placeholder="Имя*" required />
-                <input ref={inputTel} type="tel" name="telephone" placeholder="Номер телефона*" required />
+                <input ref={inputName} minLength='2' type="text" name="name" placeholder="Имя*" required />
+                <input ref={inputTel} pattern='375[0-9]{7}' minLength='10' type="tel" name="telephone" placeholder="+375-" required />
             </div>
             <div className={styles.consent}>
                 <input ref={inputCheck} className={styles.check} type="checkbox" required />

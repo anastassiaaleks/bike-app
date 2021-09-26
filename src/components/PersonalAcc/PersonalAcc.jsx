@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './PersonalAcc.css'
+import ScrollToTop from '../../ScrollToTop'
 
 const PersonalAcc = () =>{
 
@@ -14,8 +15,7 @@ const PersonalAcc = () =>{
         return (
             <div key={elem.orderId} className="wholeItem">
                 <div className="personalItem">
-                    <p> <button>&#9658;</button> Заказ № {elem.orderId}</p>
-                    <p>24.07.2021</p>
+                    <p>Заказ № {elem.orderId}</p>
                     <p>{elem.total} AED</p>
                     <p>В обработке</p>
                 </div>
@@ -37,17 +37,17 @@ const PersonalAcc = () =>{
             </div>
         )
     })
+    ScrollToTop()
     return (
         <div className="personalDiv">
             <h1>Личный кабинет</h1>
             <div className="personalCaption">
                 <p>Номер заказа</p>
-                <p>Дата</p>
                 <p>Стоимость</p>
                 <p>Статус</p>
             </div>
             <div>
-            {listBike}
+                {listBike}
             </div>
         </div>
     )

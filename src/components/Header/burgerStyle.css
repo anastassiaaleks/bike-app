@@ -101,5 +101,11 @@
     background-color: #CFD8DC;
   }
   
-  
+  @media(max-width: 426px){
+    .hamburgerMenu {
+        position: absolute;
+        right: 32px;
+        top: 16px;
+    }
+}
   
